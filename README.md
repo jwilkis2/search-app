@@ -1,13 +1,13 @@
-# homework-6
-Jonathan Wilkison
-https://github.com/jwilkis2/search-app
-10/21/2017
-CSC 436
-Homework: #6
-Complexity: 9
-Hours Invested: 15
-Expected grade: A
-
+# homework-6  
+Jonathan Wilkison  
+https://github.com/jwilkis2/search-app  
+10/21/2017  
+CSC 436  
+Homework: #6  
+Complexity: 9  
+Hours Invested: 15  
+Expected grade: A  
+  
 ## Application Intent:  
 - SPA that provides 2 pages usings routes  
 - The home page provides a search functionality  
