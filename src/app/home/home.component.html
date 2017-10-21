@@ -1,0 +1,36 @@
+<div class="row mt-4 mb-3 justify-content-center">
+  <div class="col-6">
+    <div class="input-group">
+      <input 
+        type="text" 
+        placeholder="Search" 
+        class="form-control" 
+        aria-label="Search" 
+        (click)="clearSearch(newSearch)"
+        (keyup.enter)="search(newSearch)"
+        #newSearch>
+      <span class="input-group-btn">
+        <button 
+          class="btn btn-secondary" 
+          type="button" 
+          (click)="search(newSearch)">Search</button>
+      </span>
+    </div>
+  </div>
+</div>
+<div class="row justify-content-center justify-content-around" style="height: 100vh">
+  <div class="col-5 h-75 bg-light p-2 rounded">
+    <h1 class="text-center mb-3">Wikipedia Results</h1>
+    <div class="row justify-content-center">
+      <ul>
+        <li *ngFor="let result of searchResults">{{result}}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-5 h-75 bg-light p-2 rounded">
+    <h1 class="text-center mb-3">Giphy</h1>
+    <div class="row justify-content-center">
+      <img class="img-fluid" style="max-width: 90%; max-height: 90%" [src]="imageUrl()">
+    </div>
+  </div>
+</div>

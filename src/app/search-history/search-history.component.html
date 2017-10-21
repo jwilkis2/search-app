@@ -1,0 +1,13 @@
+
+<div class="row justify-content-center mt-4 mb-4">
+  <div class="col-6 bg-light p-4 rounded" style="min-height: 75vh">
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let item of searchHistory; let i = index">
+          <th scope="row">{{timestampHistory[i]}}</th>
+          <td>{{item}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
